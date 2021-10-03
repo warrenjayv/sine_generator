@@ -45,9 +45,9 @@ int main (int argc, char *argv[]) {
 
 	if (! argv[1] || ! argv[2] ) { return 0; }
 
-	/// convert cycles to radians ///
+	/// determine cycles in radians ///
 	const double pi = 22.0 / 7.0;
-	double cycle = (double) cycles * pi; 
+	double cycle = (double) cycles * 2 * pi; // each cyle is a period of 2pi
 
 	/// all set, open a file ///
 	out = fopen("sine_wave.txt", "w"); 
@@ -64,14 +64,24 @@ int main (int argc, char *argv[]) {
 	
 	int i; iter = 0; 
 	for ( i = 0; i < samples_max; i ++ ) {
+
+		  // assert cycle //
+		  if ( iter > cycle ) {
+				break; 
+			}
+		
+			// non-indexed //
 			if ((option) && (option == 1)) {
 				fprintf( out, "\n%f", sin ( iter )); 
 				iter+= 0.1; 
 				continue; 
 			}	
-
+	
+			// indexed //
 			fprintf( out, "\n%f %f", iter, sin ( iter )); 
 			iter += 0.1; 
+
+
 	}//for(){} 
 
 	fclose(out); 
