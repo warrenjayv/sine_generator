@@ -1,3 +1,4 @@
+```diff
 # sine_generator
 A simple sine generator that output a textfile  for plotter...
 
@@ -17,5 +18,5 @@ A simple sine generator that output a textfile  for plotter...
   3. type & enter `set terminal png`
   4. type & enter `set output "out.png`
   5. type & enter `plot "sine_wave.txt" with lines`
-
+```
 ![image](https://user-images.githubusercontent.com/40836157/135745211-7e3684a3-7837-4077-bbef-6fe0d2448132.png)
