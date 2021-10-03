@@ -20,7 +20,7 @@ int main (int argc, char *argv[]) {
  	 */
 
 	int samples; 
-  int cycles; 
+        int cycles; 
 	int option; 
 
 	/// file ptrs ///
