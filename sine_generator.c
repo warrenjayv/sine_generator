@@ -1,5 +1,5 @@
 /*
- * author			 : github.com/warrenjayv
+ * author      : github.com/warrenjayv
  * description : sine wave generator  
  */
 
