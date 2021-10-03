@@ -12,4 +12,4 @@ A simple sine generator that output a textfile  for plotter...
 
      ~`./a.exe "1024" "6" "0"`
   2. type and run `gnuplot`
-  3. type `plot "sine_wave.txt" with lines
+  3. type `plot "sine_wave.txt" with lines`
