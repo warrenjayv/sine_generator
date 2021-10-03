@@ -1,6 +1,6 @@
 
 # sine_generator
-A simple sine generator that output a textfile  for plotter...
+A simple sine generator that output a textfile  for plotter.
 
 # installation
   1. clone to your desired directory
