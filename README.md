@@ -14,7 +14,9 @@ A simple sine generator that output a textfile  for plotter...
      * ~ 3rd parameter of **1** will have no indexing in `sine_wave.txt` file (no x values, just y) 
   
     :: WARNING: parameters must be enclosed via strings... ::
-   `./a.exe "1024" "6" "0"`
+   ie. `./a.exe "1024" "6" "0"`
+   
+   ( indexing is required for the next steps )
 
   2. type and run `gnuplot`
   3. type & enter `set terminal png`
