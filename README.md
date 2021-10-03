@@ -12,8 +12,8 @@ A simple sine generator that output a textfile  for plotter...
   1. open terminal, type `./a.exe <number of samples> <number of cycles>`
   
     :: WARNING: parameters must be enclosed via strings... ::
+     `./a.exe "1024" "6" "0"`
 
-   `./a.exe "1024" "6" "0"`
   2. type and run `gnuplot`
   3. type & enter `set terminal png`
   4. type & enter `set output "out.png`
