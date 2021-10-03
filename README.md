@@ -10,6 +10,8 @@ A simple sine generator that output a textfile  for plotter...
     :: NOTE: used in CYGWIN, two terminals, one for X Server; two for compile, execute, and plot ::
 
   1. open terminal, type `./a.exe <number of samples> <number of cycles>`
+     *(optional) `/a.exe <number of samples> <number of cycles> <1 or 0>` 
+     * ~ 3rd parameter of **1** will have no indexing in `sine_wave.txt` file (no x values, just y) 
   
     :: WARNING: parameters must be enclosed via strings... ::
    `./a.exe "1024" "6" "0"`
