@@ -7,3 +7,5 @@ A simple sine generator that output a textfile to copy and paste.
 
 # utilization
   1. open terminal, type `./a.exe <number of samples> <number of cycles>`
+  2. type and run `gnuplot`
+  3. type `plot "sine_wave.txt" with lines
