@@ -15,10 +15,13 @@ int main (int argc, char *argv[]) {
 	
  	/*  1 : number of samples
  	 *  2 : number of cycles
+ 	 *  3 : option              
+ 	 *      ~ option is used to remove indexing from output file. 
  	 */
 
 	int samples; 
   int cycles; 
+	int option; 
 
 	/// file ptrs ///
 	FILE *out; 
@@ -28,9 +31,9 @@ int main (int argc, char *argv[]) {
 	double iter; 		 
 
 	/// assert input ///
-	if (argc < 2) {
+	if (argc < 3) {
 		printf("please enter # of samples and # of cycles.\n");
-		printf("./a.exe <samples> <cycles>\n"); 
+		printf("./a.exe <samples> <cycles> <1 or 0 (optional)>\n"); 
 		return 0; 
 	}
 
@@ -53,9 +56,20 @@ int main (int argc, char *argv[]) {
 	/// generator ///
 	samples_max = samples * 10; 
 	printf("generating data, %d iterations\n", samples_max ); 
+
+	/// assert option /// 
+	if (argc > 3) {
+			option = atoi(argv[3]); 
+	}
 	
 	int i; iter = 0; 
 	for ( i = 0; i < samples_max; i ++ ) {
+			if ((option) && (option == 1)) {
+				fprintf( out, "\n%f", sin ( iter )); 
+				iter+= 0.1; 
+				continue; 
+			}	
+
 			fprintf( out, "\n%f %f", iter, sin ( iter )); 
 			iter += 0.1; 
 	}//for(){} 
