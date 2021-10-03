@@ -1,5 +1,5 @@
 # sine_generator
-A simple sine generator that output a textfile to copy and paste. 
+A simple sine generator that output a textfile to copy and paste. ++
 
 # installation
   1. clone to your desired directory
